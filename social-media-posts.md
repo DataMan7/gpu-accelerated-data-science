@@ -2,18 +2,18 @@
 
 ## LinkedIn Post
 
-🚀 **Excited to share my comprehensive research project on GPU-Accelerated Data Science!**
+Excited to share my comprehensive research project on GPU-Accelerated Data Science!
 
 As a Senior AI Engineer and Data Scientist with 15+ years of experience, I've created "The GPU-Accelerated Data Scientist: A Strategic Guide to NVIDIA's CUDA-X Ecosystem" - a complete roadmap for leveraging GPU acceleration in data science workflows.
 
-**Key Highlights:**
-• **Zero-code-change acceleration** with RAPIDS libraries (cuDF, cuML, cuVS)
-• **50x+ performance improvements** for machine learning algorithms
-• **Strategic insights** into NVIDIA's CUDA-X ecosystem
-• **Real-world applications** across industries (finance, healthcare, autonomous vehicles)
-• **Complete implementation examples** and benchmarks
+Key Highlights:
+- Zero-code-change acceleration with RAPIDS libraries (cuDF, cuML, cuVS)
+- 50x+ performance improvements for machine learning algorithms
+- Strategic insights into NVIDIA's CUDA-X ecosystem
+- Real-world applications across industries (finance, healthcare, autonomous vehicles)
+- Complete implementation examples and benchmarks
 
-**What you'll learn:**
+What you'll learn:
 - CUDA fundamentals and GPU architecture
 - RAPIDS ecosystem for data science acceleration
 - Deep learning optimization with cuDNN & TensorRT
@@ -22,7 +22,7 @@ As a Senior AI Engineer and Data Scientist with 15+ years of experience, I've cr
 
 This project demonstrates how GPU acceleration transforms data science from hours/days to minutes/seconds, enabling organizations to tackle previously intractable problems.
 
-🔗 **Repository:** https://github.com/[your-username]/gpu-accelerated-data-science
+Repository: https://github.com/DataMan7/gpu-accelerated-data-science
 
 #GPUComputing #DataScience #MachineLearning #AI #NVIDIA #CUDA #RAPIDS #DeepLearning #BigData
 
@@ -53,7 +53,7 @@ I've just completed a comprehensive research project that I think will be valuab
 - Real-world use cases across industries
 - Setup guides and best practices
 
-**Repository:** https://github.com/[your-username]/gpu-accelerated-data-science
+Repository: https://github.com/DataMan7/gpu-accelerated-data-science
 
 The project is structured as a learning path from basics to advanced applications. Whether you're new to GPU computing or looking to optimize existing workflows, there's something here for you.
 
@@ -65,17 +65,17 @@ What do you think - what GPU acceleration topics would you like to see covered i
 
 ## Twitter/X Post
 
-🚀 Just released: "GPU-Accelerated Data Science: Strategic Guide to NVIDIA CUDA-X Ecosystem"
+Just released: "GPU-Accelerated Data Science: Strategic Guide to NVIDIA CUDA-X Ecosystem"
 
 Complete roadmap for GPU acceleration in ML/data science:
-• RAPIDS: 50x+ speedup for ML algorithms
-• Zero-code-change acceleration
-• cuDNN, TensorRT, CUTLASS, cuOpt
-• Real benchmarks & use cases
+- RAPIDS: 50x+ speedup for ML algorithms
+- Zero-code-change acceleration
+- cuDNN, TensorRT, CUTLASS, cuOpt
+- Real benchmarks & use cases
 
-From hours to minutes with GPU power! 🔥
+From hours to minutes with GPU power!
 
-🔗 https://github.com/[your-username]/gpu-accelerated-data-science
+https://github.com/DataMan7/gpu-accelerated-data-science
 
 #GPUComputing #DataScience #MachineLearning #AI #NVIDIA #CUDA #RAPIDS #DeepLearning #BigData
 
@@ -83,25 +83,25 @@ From hours to minutes with GPU power! 🔥
 
 ## Alternative Twitter/X Thread
 
-**Tweet 1/4:**
-🚀 New research project: "GPU-Accelerated Data Science Guide"
+Tweet 1/4:
+New research project: "GPU-Accelerated Data Science Guide"
 
 As someone who's spent 15+ years in AI/data science, I created a comprehensive guide to NVIDIA's CUDA-X ecosystem. This isn't just theory - it's practical acceleration that turns hours of computation into minutes.
 
 #GPU #DataScience #AI
 
-**Tweet 2/4:**
+Tweet 2/4:
 Key findings:
-• cuML: 50x+ speedup for Random Forest, 60x for UMAP, 175x for HDBSCAN
-• cuDF: Minutes to seconds for data processing
-• cuVS: 21x faster vector search
-• Zero-code-change acceleration with RAPIDS
+- cuML: 50x+ speedup for Random Forest, 60x for UMAP, 175x for HDBSCAN
+- cuDF: Minutes to seconds for data processing
+- cuVS: 21x faster vector search
+- Zero-code-change acceleration with RAPIDS
 
-Real performance gains that matter! 📈
+Real performance gains that matter!
 
 #MachineLearning #RAPIDS #NVIDIA
 
-**Tweet 3/4:**
+Tweet 3/4:
 What you'll learn:
 - CUDA fundamentals & GPU architecture
 - RAPIDS ecosystem (cuDF, cuML, cuGraph, cuVS)
@@ -113,8 +113,8 @@ Complete learning path from basics to production.
 
 #DeepLearning #CUDA #BigData
 
-**Tweet 4/4:**
-Repository: https://github.com/[your-username]/gpu-accelerated-data-science
+Tweet 4/4:
+Repository: https://github.com/DataMan7/gpu-accelerated-data-science
 
 Whether you're new to GPUs or optimizing existing workflows, this guide provides the strategic insights and practical examples you need.
 
@@ -179,7 +179,7 @@ This technology enables:
 
 **Getting Started:**
 The complete guide, code examples, and benchmarks are available at:
-https://github.com/[your-username]/gpu-accelerated-data-science
+https://github.com/DataMan7/gpu-accelerated-data-science
 
 **Call to Action:**
 GPU acceleration isn't just about speed—it's about enabling breakthrough discoveries and competitive advantages. Whether you're a data scientist looking to optimize workflows or an organization seeking to scale AI capabilities, this guide provides the roadmap you need.
