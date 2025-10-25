@@ -42,8 +42,8 @@ __global__ void vectorAdd(float* a, float* b, float* c, int n) {
 
 ### Thread Hierarchy
 - **Thread**: Basic execution unit
-- **Block**: Group of threads sharing shared memory
-- **Grid**: Collection of blocks
+- **Block**: Group of threads that execute together on the same SM, sharing shared memory and synchronization primitives
+- **Grid**: Collection of thread blocks that execute a kernel function
 
 ### Memory Management
 Proper memory allocation and transfer is crucial:
