@@ -1,0 +1,63 @@
+# Compiled CUDA binaries
+*.o
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+
+# CUDA build artifacts
+*.ptx
+*.cubin
+*.fatbin
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Data files (uncomment if you want to ignore data)
+# *.csv
+# *.json
+# *.pkl
+# *.h5
+
+# Model files
+*.pth
+*.pt
+*.h5
+*.hdf5
+
+# Benchmark results
+results/
+benchmarks/
+
+# Large datasets (add specific patterns as needed)
+# data/
+# datasets/
