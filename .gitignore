@@ -56,7 +56,7 @@ logs/
 
 # Benchmark results
 results/
-benchmarks/
+# benchmarks/
 
 # Large datasets (add specific patterns as needed)
 # data/
