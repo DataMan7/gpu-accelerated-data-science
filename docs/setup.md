@@ -15,20 +15,69 @@
 ## Software Installation
 
 ### Step 1: Install NVIDIA Drivers
+
+#### Linux (Ubuntu/Debian/CentOS/RHEL)
 ```bash
 # Ubuntu/Debian
 sudo apt update
 sudo apt install nvidia-driver-XXX  # Replace XXX with latest version
 
+# CentOS/RHEL
+sudo dnf install akmod-nvidia  # CentOS 8+ / RHEL 8+
+# OR
+sudo yum install nvidia-driver-latest-dkms  # CentOS 7 / RHEL 7
+
 # Verify installation
 nvidia-smi
 ```
 
-### Step 2: Install CUDA Toolkit
-Download from NVIDIA Developer website or use package manager:
-
+#### Linux (Arch/Manjaro/Cinnamon)
 ```bash
-# Ubuntu/Debian
+# Install NVIDIA drivers
+sudo pacman -S nvidia-dkms nvidia-utils
+
+# For laptop hybrid graphics (optional)
+sudo pacman -S nvidia-prime
+
+# Enable NVIDIA services
+sudo systemctl enable nvidia-persistenced
+sudo systemctl start nvidia-persistenced
+
+# Verify installation
+nvidia-smi
+```
+
+#### macOS (Limited GPU Support)
+```bash
+# Note: macOS has limited NVIDIA GPU support
+# External GPUs (eGPU) may work with Thunderbolt 3/4 enclosures
+# Check compatibility with your specific Mac model
+
+# Install CUDA toolkit (if compatible)
+# Download from: https://developer.nvidia.com/cuda-downloads
+# Follow macOS installation instructions
+
+# Verify (if supported)
+nvidia-smi  # May not work on all Mac models
+```
+
+#### Windows
+```powershell
+# Download NVIDIA drivers from:
+# https://www.nvidia.com/Download/index.aspx
+
+# Install the driver package
+# Follow the installation wizard
+
+# Verify installation (Command Prompt or PowerShell)
+nvidia-smi
+```
+
+### Step 2: Install CUDA Toolkit
+
+#### Linux (Ubuntu/Debian)
+```bash
+# Ubuntu 20.04/22.04
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
@@ -37,16 +86,54 @@ sudo apt-get update
 sudo apt-get install cuda
 ```
 
+#### Linux (CentOS/RHEL)
+```bash
+# CentOS 7/RHEL 7
+sudo yum install cuda
+
+# CentOS 8+/RHEL 8+
+sudo dnf install cuda
+```
+
+#### Linux (Arch/Manjaro/Cinnamon)
+```bash
+# Install CUDA toolkit
+sudo pacman -S cuda
+
+# Alternative: Install from AUR
+yay -S cuda-toolkit
+```
+
+#### macOS
+```bash
+# Download CUDA toolkit from NVIDIA
+# https://developer.nvidia.com/cuda-downloads
+# Select macOS version and follow installation instructions
+
+# Note: macOS CUDA support is limited to specific GPU models
+```
+
+#### Windows
+```powershell
+# Download CUDA toolkit installer
+# https://developer.nvidia.com/cuda-downloads
+# Select Windows version and run the installer
+# Follow the installation wizard
+```
+
 ### Step 3: Install cuDNN
 1. Download cuDNN from NVIDIA Developer website
 2. Extract and copy to CUDA installation directory
 3. Update environment variables
 
 ### Step 4: Python Environment Setup
+
+#### Option A: Using venv (Standard Python)
 ```bash
 # Create virtual environment
 python3 -m venv gpu-env
-source gpu-env/bin/activate
+source gpu-env/bin/activate  # Linux/Mac
+# gpu-env\Scripts\activate   # Windows
 
 # Install GPU libraries
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
@@ -54,6 +141,25 @@ pip install cupy-cuda11x
 pip install cudf dask-cudf  # RAPIDS
 pip install tensorflow-gpu
 pip install numba
+```
+
+#### Option B: Using uv (Faster Alternative)
+```bash
+# Install uv (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# Or: pip install uv
+
+# Create virtual environment with uv
+uv venv gpu-env-uv
+source gpu-env-uv/bin/activate  # Linux/Mac
+# gpu-env-uv\Scripts\activate   # Windows
+
+# Install GPU libraries with uv (much faster)
+uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+uv pip install cupy-cuda11x
+uv pip install cudf dask-cudf  # RAPIDS
+uv pip install tensorflow-gpu
+uv pip install numba
 ```
 
 ## Environment Variables
